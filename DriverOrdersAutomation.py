@@ -82,7 +82,7 @@ def run() -> object:
 
 ## Test Zone
 if __name__ == '__main__':
-    schedule.every().hour.at(":12").do(run)
+    schedule.every().hour.at(":00").do(run)
     while True:
         schedule.run_pending()
         time.sleep(3)
